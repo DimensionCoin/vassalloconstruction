@@ -1,6 +1,7 @@
 import React from "react";
-import ConstructionImage from "@/assets/vassalloicon.png"; 
+import ConstructionImage from "@/assets/vassalloicon.png";
 import Image from "next/image";
+
 const About = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen bg- text-gray-200 p-4 bg-gradient-to-b from-[#1d1d1d] to-[#373737]">
@@ -19,10 +20,10 @@ const About = () => {
           closely with our clients to ensure their vision is realized. At
           Vassallo Construction, we take pride in our attention to detail,
           commitment to safety, and use of the latest construction techniques
-          and materials. Whether you're looking to build a new home or renovate
-          an existing space, we have the expertise and resources to make your
-          project a success. Contact us today to learn more about our services
-          and how we can help you with your construction needs.
+          and materials. Whether you&apos;re looking to build a new home or
+          renovate an existing space, we have the expertise and resources to
+          make your project a success. Contact us today to learn more about our
+          services and how we can help you with your construction needs.
         </p>
       </div>
     </div>
