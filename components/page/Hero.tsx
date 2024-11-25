@@ -42,8 +42,8 @@ const scrollToSection = (id: string) => {
 
 const Hero = () => {
   return (
-    <div className="relative px-6 h-[calc(100vh-50px)] overflow-hidden bg-gradient-to-b from-[#373737] to-[#1d1d1d]">
-      <div className="relative m-auto h-full max-w-[1366px] flex flex-col justify-center items-center md:flex-row z-10">
+    <div className="relative px-2 h-[calc(100vh-50px)] overflow-hidden bg-gradient-to-b from-[#373737] to-[#1d1d1d]">
+      <div className="relative m-auto h-full max-w-[1500px] flex flex-col justify-center items-center md:flex-row z-10">
         <motion.div
           className="flex flex-col justify-center h-full gap-8 md:gap-10 w-3/4 md:w-1/2 text-center md:text-left z-20"
           variants={textVariants}
@@ -71,6 +71,13 @@ const Hero = () => {
               className="p-3 md:p-5 border border-white rounded-[10px] bg-transparent text-white font-light cursor-pointer"
               variants={textVariants}
             >
+              Our Services
+            </motion.button>
+            <motion.button
+              onClick={() => scrollToSection("Gallary")}
+              className="p-3 md:p-5 border border-white rounded-[10px] bg-transparent text-white font-light cursor-pointer"
+              variants={textVariants}
+            >
               Our Gallery
             </motion.button>
             <motion.button
@@ -84,7 +91,7 @@ const Hero = () => {
         </motion.div>
         <div className="hidden md:block w-1/2 z-10">
           <Image
-            className="object-cover w-full h-full rounded-lg"
+            className="object-cover w-full h-full rounded-full"
             src={hero}
             alt="hero"
           />
